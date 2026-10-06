@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos Práticos - Aula 7 (Professor: Alcides)</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Laboratório de JavaScript - Aula 7</h1>
+    </header>
+
+    <main class="container">
+
+        <!-- 1. Variáveis, Conversão, Decisão, DOM, Eventos, Objetos Padrões -->
+        <section class="card">
+            <h2 class="titulo-exemplo">1. Fundamentos (Radar de Velocidade)</h2>
+            <p>Simulador de infração de trânsito. Demonstra <em>let</em>, conversão, <em>Math.round()</em> e if/else.
+            </p>
+            <input type="number" id="inputLimite" placeholder="Limite da via (km/h)">
+            <input type="number" id="inputVelocidade" placeholder="Sua velocidade (km/h)">
+            <button id="btnRadar" class="btn-full">Verificar Radar</button>
+            <output id="resRadar" class="resultado res-block">Aguardando leitura do radar...</output>
+        </section>
+
+        <!-- 2. Vetores, for...of, map, reduce, filter, forEach -->
+        <section class="card">
+            <h2 class="titulo-exemplo">2. Manipulação de Arrays (Estoque)</h2>
+            <p>Analise a produção artesanal de uma padaria. Demonstração prática usando um vetor de objetos (Muffins).
+            </p>
+            <button id="btnArrayEstoque">Gerar Relatório da Fornada</button>
+            <output id="resArray" class="resultado res-array-text">O relatório aparecerá aqui...</output>
+        </section>
+
+        <!-- 3. JS manipulando CSS (Novo Editor de Cartão) -->
+        <section class="card">
+            <h2 class="titulo-exemplo">3. JS Manipulando CSS (Editor)</h2>
+            <p>Altere a aparência do cartão e observe a relação entre controles, propriedades CSS e classes.</p>
+
+            <section class="controles-editor">
+                <label>Cor do texto
+                    <input id="cor" type="color" value="#174ca1">
+                </label>
+                <label>Tamanho: <output id="tamanhoTexto">24 px</output>
+                    <input id="tamanho" type="range" min="16" max="40" value="24">
+                </label>
+            </section>
+
+            <menu>
+                <button id="destaque">Alternar destaque</button>
+                <button id="visibilidade">Ocultar cartão</button>
+                <button id="restaurar">Restaurar</button>
+            </menu>
+
+            <article id="cartao">
+                <h2>Oficina de JavaScript</h2>
+                <p>Aprender, experimentar e construir.</p>
+            </article>
+
+            <pre id="estado" class="resultado"></pre>
+        </section>
+
+        <!-- 4. Temporizadores (Jogo do Dado) -->
+        <section class="card">
+            <h2 class="titulo-exemplo">4. Temporizadores (Jogo do Dado)</h2>
+            <p>Escolha um número, jogue o dado e veja se você acerta! (Usa <i>setInterval</i> para animar e
+                <i>setTimeout</i> para parar).
+            </p>
+
+            <label class="label-bold">Seu palpite (1 a 6):
+                <input type="number" id="inputPalpite" min="1" max="6" value="3">
+            </label>
+            <button id="btnJogarDado">Lançar Dado!</button>
+
+            <figure id="dadoVisual" class="dado-visual-container"><i class="fa-solid fa-dice"></i></figure>
+
+            <output id="resDado" class="resultado res-block">Faça sua aposta!</output>
+        </section>
+
+        <!-- 5. Classes e Objetos (Cards de RPG) -->
+        <section class="card">
+            <h2 class="titulo-exemplo">5. Classes e Objetos (Gerador RPG)</h2>
+            <p>Instancie Personagens e adicione-os a um <b>Vetor</b> dinâmico exibido com barra de rolagem.</p>
+
+            <input type="text" id="inputNomeRpg" placeholder="Nome do Personagem">
+
+            <select id="selectClasseRpg" class="select-icon">
+                <option value="Guerreiro"> Guerreiro</option>
+                <option value="Mago"> Mago</option>
+                <option value="Arqueiro"> Arqueiro</option>
+            </select>
+
+            <input type="number" id="inputNivelRpg" placeholder="Nível (ex: 10)" min="1">
+
+            <button id="btnCriarPersonagem" class="btn-full">Invocar Personagem</button>
+
+            <section id="listaCardsRpg" class="rpg-container">
+                <!-- Os cards HTML gerados pelas instâncias de classe entrarão aqui -->
+            </section>
+        </section>
+
+        <!-- 6. LocalStorage -->
+        <section class="card card-transition" id="cardPreferencias">
+            <h2 class="titulo-exemplo">6. API Web Storage (Preferências)</h2>
+            <p>Salve seu nome e o tema do card. Sem usar JSON, gravamos chaves separadas no navegador.</p>
+            <input type="text" id="inputNomeUser" placeholder="Seu nome (ex: Mestre Yoda)">
+            <select id="selectTema" class="select-icon">
+                <option value="claro">&#xf185; Tema Claro</option>
+                <option value="escuro">&#xf186; Tema Escuro</option>
+            </select>
+            <menu class="menu-flex">
+                <button id="btnSavePrefs" class="btn-flex-1">Salvar</button>
+                <button id="btnClearPrefs" class="btn-flex-1 btn-danger">Limpar</button>
+            </menu>
+            <output id="resPrefs" class="resultado res-block">Status: Padrão</output>
+        </section>
+
+    </main>
+
+    <!-- SCRIPTS DA AULA -->
+    <script src="script/script1.js"></script>
+    <script src="script/script2.js"></script>
+    <script src="script/script3.js"></script>
+    <script src="script/script4.js"></script>
+    <script src="script/script5.js"></script>
+    <script src="script/script6.js"></script>
+
+</body>
+
+</html>

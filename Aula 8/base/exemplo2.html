@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Gerador de Senhas Seguras</title>
+  <link rel="stylesheet" href="css/exemplo2.css">
+</head>
+
+<body>
+
+  <div class="card-senha">
+    <h3>Gerador de Chaves de Acesso</h3>
+    <div class="visor-senha" id="visorSenha">Clique em Gerar</div>
+
+    <div class="opcao">
+      <label for="compSenha">Tamanho (carateres):</label>
+      <input type="number" id="compSenha" value="12" min="6" max="24">
+    </div>
+    <div class="opcao">
+      <label><input type="checkbox" id="chkMaiusculas" checked> Incluir Letras Maiúsculas</label>
+    </div>
+    <div class="opcao">
+      <label><input type="checkbox" id="chkNumeros" checked> Incluir Números</label>
+    </div>
+    <div class="opcao">
+      <label><input type="checkbox" id="chkSimbolos"> Incluir Símbolos Especiais (!@#$)</label>
+    </div>
+
+    <button id="btnGerar">Gerar Nova Senha</button>
+    <div class="forca" id="indicadorForca"></div>
+  </div>
+
+  <script src="js/exemplo2.js"></script>
+</body>
+
+</html>

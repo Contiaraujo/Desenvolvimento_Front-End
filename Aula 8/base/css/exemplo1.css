@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f8fafc;
+}
+
+.card {
+    max-width: 360px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+}
+
+.campo {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+input,
+button {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #0284c7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+#saidaTabuada {
+    margin-top: 15px;
+    padding: 10px;
+    background: #f1f5f9;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 15px;
+    max-height: 220px;
+    overflow-y: auto;
+}
+
+.resumo {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #475569;
+    font-weight: bold;
+}

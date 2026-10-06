@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Simulador de Publicação</title>
+  <link rel="stylesheet" href="css/exemplo3.css">
+</head>
+
+<body>
+
+  <div class="card-post">
+    <h3>Nova Publicação</h3>
+    <textarea id="textoPost" placeholder="O que tem em mente? (máx. 140 carateres)"></textarea>
+
+    <div class="barra-container">
+      <div id="barraProgresso"></div>
+    </div>
+
+    <div class="estatisticas">
+      <span id="infoCarateres">0 / 140 carateres</span>
+      <span id="infoPalavras">0 palavras</span>
+    </div>
+
+    <button id="btnPublicar" disabled>Publicar Mensagem</button>
+    <div id="feedPreview"></div>
+  </div>
+
+  <script src="js/exemplo3.js"></script>
+</body>
+
+</html>

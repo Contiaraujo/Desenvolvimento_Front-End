@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 25px;
+    background-color: #f4f6f8;
+}
+
+.card-post {
+    max-width: 440px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    width: 100%;
+    height: 110px;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: none;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.barra-container {
+    width: 100%;
+    background-color: #eee;
+    height: 8px;
+    border-radius: 4px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+#barraProgresso {
+    height: 100%;
+    width: 0%;
+    background-color: #28a745;
+    transition: width 0.2s, background-color 0.2s;
+}
+
+.estatisticas {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#feedPreview {
+    margin-top: 15px;
+    padding: 10px;
+    background: #eef4fc;
+    border-left: 4px solid #007bff;
+    display: none;
+}

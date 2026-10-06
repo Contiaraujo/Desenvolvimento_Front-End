@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Gerador de Tabuada</title>
+  <link rel="stylesheet" href="css/exemplo1.css">
+</head>
+
+<body>
+
+  <div class="card">
+    <h3>Gerador de Tabuada</h3>
+    <div class="campo">
+      <label for="numBase">Número Base:</label>
+      <input type="number" id="numBase" value="7">
+    </div>
+    <div class="campo">
+      <label for="numLimite">Calcular até:</label>
+      <input type="number" id="numLimite" value="10" min="1" max="50">
+    </div>
+    <button id="btnGerar">Gerar Operações</button>
+
+    <div id="saidaTabuada">Introduza os valores para calcular.</div>
+    <div class="resumo" id="resumoPares"></div>
+  </div>
+
+  <script src="js/exemplo1.js"></script>
+</body>
+
+</html>

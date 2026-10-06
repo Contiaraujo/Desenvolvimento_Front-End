@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f3f4f6;
+}
+
+.card-compras {
+    max-width: 440px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.linha-add {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 9px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 8px 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.btn-adicionar {
+    background-color: #059669;
+    color: white;
+}
+
+.btn-limpar-tudo {
+    background-color: #dc2626;
+    color: white;
+    width: 100%;
+    margin-top: 15px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 8px;
+    border-bottom: 1px solid #e5e7eb;
+    transition: background-color 0.2s;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.item-esquerda {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+.item-texto {
+    font-size: 15px;
+}
+
+.item-concluido {
+    background-color: #f9fafb;
+}
+
+.comprado {
+    text-decoration: line-through;
+    color: #9ca3af;
+}
+
+.btn-excluir {
+    background: #fee2e2;
+    color: #dc2626;
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.btn-excluir:hover {
+    background: #fecaca;
+}
+
+.painel-resumo {
+    margin-top: 15px;
+    background: #ecfdf5;
+    border: 1px solid #a7f3d0;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: #065f46;
+}
