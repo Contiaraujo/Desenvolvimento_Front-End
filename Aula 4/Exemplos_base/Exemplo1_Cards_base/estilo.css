@@ -1,0 +1,65 @@
+*{
+    font-family: 'Arial', "Century Gothic";
+}
+
+body{
+    margin: 0;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeAQ1vNbqLDOtpzgwQTytTMLF584qKUClTfOQ43X9KjA&s=10");
+
+    
+}
+
+header{
+    background-color: rgb(248, 224, 100);
+    color:azure;
+    height: 50px;
+    padding: 40px;
+    padding-left: 20px;
+}
+
+h1{
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer{
+    background-color: rgb(0, 0, 0);
+    color:azure;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+}
+
+figure{
+background-color: white;
+max-width: 300px;
+padding: 10px;
+border: 1px solid black;
+margin: 0;
+box-sizing: border-box;
+}
+
+figure img{
+    height: auto;
+    height: 250px;
+    object-fit: cover;
+
+}
+
+
+#principal{
+    text-align: center;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+    margin: 0 auto;
+}

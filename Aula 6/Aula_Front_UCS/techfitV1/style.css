@@ -1,0 +1,381 @@
+﻿:root {
+    --primaria: #0d9488;
+    --primaria-hover: #0f766e;
+    --primaria-clara: #99f6e4;
+    --primaria-suave: #f0fdfa;
+
+    --fundo-base: #f8fafc;
+    --fundo-cartao: #ffffff;
+    --fundo-alternativo: #f1f5f9;
+
+    --texto-principal: #1e293b;
+    --texto-suave: #64748b;
+    --texto-claro: #94a3b8;
+
+    --cor-borda: #e2e8f0;
+    --raio-pequeno: 8px;
+    --raio-medio: 14px;
+    --raio-grande: 20px;
+
+    --sombra-pequena: 0 2px 8px rgba(15, 23, 42, 0.04);
+    --sombra-media: 0 8px 24px rgba(15, 23, 42, 0.06);
+
+    --fonte-principal: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+    --transicao: all 0.25s ease-in-out;
+}
+
+/* --- Reset & Base --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 30px;
+}
+
+section[id] {
+    scroll-margin-top: 30px;
+}
+
+body {
+    font-family: var(--texto-principal);
+    background-color: var(--fonte-principal);
+    color: var(--texto-claro);
+    line-height: 1.6;
+}
+
+img {
+    width: 150px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sr-only {}
+
+/* --- Globais & Utilitários --- */
+.botao,
+.botao-secundario {
+    display: inline-block;
+    padding: 10px 28px;
+    border-radius: var(--fonte-corpo);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.botao {
+    background-color: var(--cor-botao-azul);
+    color: var(--cor-fundo-claro);
+}
+
+.botao:hover {
+    background-color: var(--cor-botao-azul-hover);
+}
+
+.botao-secundario {
+    background-color: var(--cor-botao-azul);
+    color: var(--cor-fundo-claro);
+}
+
+.botao-secundario:hover {
+    background-color: var(--cor-botao-azul-hover);
+}
+
+.cabecalho-secao,
+.cabecalho-secao-inline {
+    
+}
+
+.cabecalho-secao p {}
+
+.cabecalho-secao h2,
+.cabecalho-secao-inline h2 {}
+
+.secao-inicio,
+.secao-modalidades,
+.grid-planos,
+.secao-sobre {}
+
+.cartao-modalidade,
+.cartao-plano,
+.lista-beneficios li {}
+
+/* --- Cabeçalho & Navegação --- */
+.cabecalho-principal {
+    display: flex;
+    gap: 32px;
+}
+
+.logo-container {}
+
+.logo-container .logo {
+    font-family: var(--fonte-principal);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--cor-fundo-claro);
+    text-decoration: none;
+}
+
+.marca h1 {}
+
+.marca p {}
+
+.cabecalho-principal nav {}
+
+.cabecalho-principal nav a {}
+
+.cabecalho-principal nav a:hover,
+.cabecalho-principal nav a.ativo {}
+
+/* --- Inicio --- */
+.secao-inicio {}
+
+.conteudo-inicio h2 {}
+
+.conteudo-inicio p {}
+
+@keyframes flutuar {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.imagem-inicio {}
+
+.imagem-inicio img {}
+
+/* --- Modalidades --- */
+.grid-modalidades,
+.grid-planos {}
+
+.cartao-modalidade {}
+
+.cartao-modalidade:hover {}
+
+.cartao-modalidade figure {}
+
+.cartao-modalidade figure img {}
+
+.cartao-modalidade:hover figure img {}
+
+.cartao-modalidade .icone {}
+
+.cartao-modalidade h3 {}
+
+.cartao-modalidade p {}
+
+/* --- Benefícios --- */
+.secao-beneficios {}
+
+.lista-beneficios {}
+
+.lista-beneficios li {}
+
+.lista-beneficios .icone {}
+
+.lista-beneficios p {}
+
+.lista-beneficios li:hover {}
+
+.lista-beneficios li:hover .icone {}
+
+/* --- Planos --- */
+.grid-planos {}
+
+.cartao-plano {}
+
+.cartao-plano:hover {}
+
+.cartao-plano.destaque {}
+
+.tag-destaque {}
+
+.cabecalho-plano h3 {}
+
+.descricao-plano {}
+
+.beneficios-plano {}
+
+.beneficios-plano li {}
+
+.preco-plano {}
+
+.preco-plano strong {}
+
+.cartao-plano .botao {}
+
+/* --- Horários --- */
+.secao-horarios {}
+
+.tabela-horarios {}
+
+.tabela-horarios th {}
+
+.tabela-horarios td {}
+
+.tabela-horarios tbody tr:hover {}
+
+/* --- Sobre --- */
+.secao-sobre {}
+
+.conteudo-sobre h2 {}
+
+.conteudo-sobre p {}
+
+.conteudo-sobre .botao-secundario {}
+
+.imagem-sobre {}
+
+.imagem-sobre img {}
+
+/* --- Contato & Formulário --- */
+.secao-contato {}
+
+.formulario-contato {
+    max-width: 580px;
+    margin: 0 auto;
+    background-color: var(--fundo-base);
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid var(--cor-botao-azul);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.formulario-contato fieldset {}
+
+.grupo-linha {}
+
+.campo {}
+
+.campo-total {}
+
+.formulario-contato label,
+.label-texto {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.formulario-contato input[type="text"],
+.formulario-contato input[type="email"],
+.formulario-contato input[type="tel"],
+.formulario-contato select,
+.formulario-contato textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--texto-claro);
+    border-radius: 8px;
+    font-size: 15px;
+    color: var(--cor-texto-principal);
+    margin-bottom: 8px;
+}
+
+.formulario-contato input[type="text"]:focus,
+.formulario-contato input[type="email"]:focus,
+.formulario-contato input[type="tel"]:focus,
+.formulario-contato select:focus,
+.formulario-contato textarea:focus {
+    outline: none;
+    border-color: var(--cor-fundo-claro);
+    background-color: var(--cor-borda-suave);
+}
+
+.opcoes-radio {}
+
+.opcoes-radio label,
+.campo-checkbox label {}
+
+.opcoes-radio input[type="radio"],
+.campo-checkbox input[type="checkbox"] {}
+
+.rodape-form {
+
+}
+
+.campo-checkbox {}
+
+.campo-botao {}
+
+/* --- Rodapé --- */
+.rodape-principal {
+    background-color: var(--cor-fundo-escuro);
+    color: var(--cor-texto-claro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.coluna-marca .logo-rodape {
+    font-size: 19px;
+  color: var(--cor-laranja);
+}
+
+.detalhes-marca {}
+
+.detalhes-marca a {}
+
+.detalhes-marca a:hover {}
+
+.coluna-redes p {}
+
+.icones-redes {}
+
+.icones-redes a {}
+
+.icones-redes a:hover {}
+
+.coluna-direitos {}
+
+.coluna-direitos .icone-final {}
+
+/* --- Responsividade --- */
+@media (max-width: 780px) {
+    html {}
+
+    section[id] {}
+
+    .cabecalho-principal {}
+
+    .cabecalho-principal nav {}
+
+    .secao-inicio,
+    .secao-sobre {}
+
+    .grid-modalidades,
+    .grid-planos {}
+
+    .lista-beneficios {}
+
+    .conteudo-inicio {}
+
+    .conteudo-inicio h2 {}
+
+    .secao-contato {}
+
+    .tabela-horarios th,
+    .tabela-horarios td {}
+
+    .rodape-form {}
+
+    .campo-botao .botao {}
+
+    .rodape-principal {}
+
+    .coluna-direitos {}
+
+    .icones-redes {}
+}
